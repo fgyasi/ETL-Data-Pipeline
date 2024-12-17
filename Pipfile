@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://nexus.pulsepoint.com/repository/techops-pypi/"
+verify_ssl = true
+name = "nexuspulsepoint"
+
+[packages]
+fastapi = {extras = ["all"], version = "*"}
+redis = "*"
+pandas = "*"
+psycopg2-binary = "*"
+requests = "*"
+simple-chalk = "*"
+boto3 = "*"
+pyment = "*"
+pytest = "*"
+numpy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
